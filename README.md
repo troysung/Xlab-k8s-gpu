@@ -1,6 +1,6 @@
 <img align="right" width="150" src="images/logo.png"/>
 
-# Accelerative Algorithm of Solving Linear Equations
+# Accelerative Algorithm of Large Sparse Linear Equations
 
 ## Introduction
 
