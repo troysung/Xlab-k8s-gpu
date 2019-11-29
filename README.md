@@ -57,5 +57,5 @@ We use **GitHub Wiki** for organizing documentation. For the documentation avail
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/1751200/Xlab-k8s-gpu/blob/master/LICENSE) file for details.
+This project is licensed under the Apache2.0 License - see the [LICENSE.md](https://github.com/1751200/Xlab-k8s-gpu/blob/master/LICENSE) file for details.
 
