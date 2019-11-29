@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Accelerative algorithm of solving large sparse linear algebraic equation using C++ language, implementing *Jacobi Method*, *Gauss—Seidel Method*, *Successive Over-Relaxation (SOR) Method*, *Steepest Descent Algorithm*, and *Conjugate Gradient Method*. Among these, we also implemented *Jacobi Method* and *Steepest Descent Algorithm* using Nvidia CUDA API to accelerate these algorithms.
+GPU-accelerated algorithms for solving large sparse linear algebraic equations using C++ language, implementing *Jacobi Method*, *Gauss—Seidel Method*, *Successive Over-Relaxation (SOR) Method*, *Steepest Descent Algorithm*, and *Conjugate Gradient Method*. Among these, we also implemented *Jacobi Method* and *Steepest Descent Algorithm* using Nvidia CUDA API to accelerate these algorithms.
 
 It is a collaborative, interdisciplinary project drawing on expertise from School of Software Engineering and College of Civil Engineering, Tongji University, Shanghai.
 
