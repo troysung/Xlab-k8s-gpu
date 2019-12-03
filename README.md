@@ -1,6 +1,6 @@
 <img align="right" width="150" src="images/logo.png"/>
 
-# GPU-accelerated Algorithms for Solving Sparse Linear Systems
+# GPU-accelerated Algorithms for Solving Linear Systems
 
 ## Introduction
 
