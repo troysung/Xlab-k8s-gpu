@@ -1,6 +1,6 @@
 <img align="right" width="150" src="images/logo.png"/>
 
-# GPU-accelerated Algorithms for Solving Sparse Linear Systems
+# GPU-accelerated Algorithms for Solving Linear Systems
 
 ## Introduction
 
@@ -47,12 +47,12 @@ We use **GitHub Wiki** for organizing documentation. For the documentation avail
 ```
 .
 ├── CudaTest				# Solve large matrix multiplication using CUDA API
-├── LICENSE					# MIT License
+├── LICENSE				# MIT License
 ├── PythonVersion			# Solve large matrix multiplication using python libararies
 ├── README.md				# README file
 ├── ReadFile				# Read the xxx.stiff file for the matrix input
-├── cuBLAS					# Solve large matrix multiplication using cuBLAS API
-└── images					# images for documentation
+├── cuBLAS				# Solve large matrix multiplication using cuBLAS API
+└── images				# images for documentation
 ```
 
 ## License
