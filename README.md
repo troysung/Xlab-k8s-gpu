@@ -46,13 +46,14 @@ We use **GitHub Wiki** for organizing documentation. For the documentation avail
 
 ```
 .
-├── CudaTest				# Solve large matrix multiplication using CUDA API
-├── LICENSE				# MIT License
-├── PythonVersion			# Solve large matrix multiplication using python libararies
-├── README.md				# README file
-├── ReadFile				# Read the xxx.stiff file for the matrix input
-├── cuBLAS				# Solve large matrix multiplication using cuBLAS API
-└── images				# images for documentation
+├── CudaTest			# Solve large matrix multiplication using CUDA API
+├── IterativeMethod             # Jacobi & Gradient Descent Iterative Method
+├── LICENSE			# MIT License
+├── PythonVersion		# Solve large matrix multiplication using python libararies
+├── README.md			# README file
+├── ReadFile			# Read the xxx.stiff file for the matrix input
+├── cuBLAS			# Solve large matrix multiplication using cuBLAS API
+└── images			# images for documentation
 ```
 
 ## License
