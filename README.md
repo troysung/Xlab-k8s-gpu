@@ -1,4 +1,4 @@
-<img align="right" width="150" src="https://raw.githubusercontent.com/1751200/Xlab-k8s-gpu/master/images/Sage_logo_new.png"/>
+<img align="right" height="60" src="https://raw.githubusercontent.com/1751200/Xlab-k8s-gpu/master/images/Sage_logo_new.png"/>
 
 # Sage Linear System Solver
 
