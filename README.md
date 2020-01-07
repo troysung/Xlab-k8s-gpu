@@ -24,19 +24,38 @@ It is a collaborative, interdisciplinary project drawing on expertise from Schoo
 
 ### Import the Project to IDE
 
-**TODO**: (How to import the project into IDE)
+- Basic CPU versions (jacobi, gauss, SOR, conjugate gradient)
+    - Use Visual Studio (2015/16/17/18) to create a `Command Line Application` project.
+    - Copy the relevent `.cpp`, `.h` files to the project path `xxx/src`
+    - You can also use compilers other than Visual Studio such as dev c++, llvm, ant etc.
+    
+- CUDA GPU versions (jacobi_gpu, cg_gpu)
+    - Use Visual Studio to create a blank `CUDA` project.
+    - Copy the relevant `.cu`, `.cuh`, `.cpp`, `.h`, `.lib`, `.exp` files to the project path `xxx/src`
+    - You can also use ncvv compilers (requires gcc and g++ on Linux, clang and clang++ on Mac OS X, and cl.exe on Windows)
 
 ### Build the Project
 
-**TODO**: (How to build executable artifacts.)
+In Visual Studio:
+- After configuring the compilation, click `Build` to build the project.
+
+In Command Line:
+- If using g++ compiler, we strongly recommend you to turn on O3 compiler optimization using `g++ -o3` command.
 
 ## Running the Project
 
-**TODO**: (Describing how to startup the project)
+- Install npm if missing npm environment
+- Enter `project` folder
+    ```
+    cd project
+    ```
+- Run `npm start`
+- Open your browser and visit `localhost://3000`
 
 ## Project Functionalities
 
-**TODO**: (Basic operations of the project)
+- Upload your matrix files (each includes a dense matrix and vector)
+- Solve the linear system using different algorithms
 
 ## Documentation
 
