@@ -65,14 +65,27 @@ We use **GitHub Wiki** for organizing documentation. For the documentation avail
 
 ```
 .
-├── CudaTest			# Solve large matrix multiplication using CUDA API
-├── IterativeMethod             # Jacobi & Gradient Descent Iterative Method
-├── LICENSE			# MIT License
-├── PythonVersion		# Solve large matrix multiplication using python libararies
-├── README.md			# README file
-├── ReadFile			# Read the xxx.stiff file for the matrix input
-├── cuBLAS			# Solve large matrix multiplication using cuBLAS API
-└── images			# images for documentation
+├── MatMul                         # Solve large matrix multiplication problem
+│   ├── CUDA                       # Example provided by CUDA tutorial
+│   ├── PyTorch&CuPy               # Cope with matrix multiplication using python libararies
+│   └── cuBLAS                     # Solve large matrix multiplication using cuBLAS API
+├── Iterative-Methods              # Implementation of iterative methods
+│   ├── Basic                      # initialize solvers
+│   ├── ConjugateGradient          # Conjugate Gradient method (both CPU and GPU)
+│   ├── Jacobi                     # Jacobi method (both CPU and GPU)
+│   ├── Gauss-Seidel               # Gauss Seidel method (both CPU and GPU)
+│   ├── Sparse-Matrix-CG-Solver    # Solve sparse linear system using cuBLAS and cuSOLVER
+│   └── Utils                      # Utils, helps to read matrix data from given file
+├── Non-iterative-Methods          # Implementation of iterative methods
+│   ├── Eigen                      # Gaussian Elimination, LU, SVD methods using Eigen
+│   ├── Gaussian-elimination       # Gaussian Elimination method
+│   ├── LU-Decomposition           # LU Decomposition method
+│   └── svd-solver                 # SVD Decomposition method
+├── project                        # A Node.js app for testing these algorithms
+├── Report                         # Documentation for this project
+├── README.md
+├── LICENSE
+└── images
 ```
 
 ## License
