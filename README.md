@@ -4,7 +4,7 @@
 
 ## Introduction
 
-GPU-accelerated algorithms for solving large sparse linear algebraic equations using C++ language, implementing *Jacobi Method*, *Gauss—Seidel Method*, *Successive Over-Relaxation (SOR) Method*, and *Conjugate Gradient Method*. Among these, we also implemented *Jacobi Method* and *Conjugate Gradient* using Nvidia CUDA API to accelerate these algorithms.
+GPU-accelerated algorithms for solving large sparse linear algebraic equations using C++ language, implementing *Jacobi Method*, *Gauss—Seidel Method*, *Successive Over-Relaxation (SOR) Method*, and *Conjugate Gradient Method*. Among these, we also implemented *Jacobi Method* and *Conjugate Gradient* using Nvidia CUDA API to accelerate these algorithms.
 
 It is a collaborative, interdisciplinary project drawing on expertise from School of Software Engineering and College of Civil Engineering, Tongji University, Shanghai.
 
@@ -21,6 +21,23 @@ It is a collaborative, interdisciplinary project drawing on expertise from Schoo
 - Get the source code from GitHub
 
     > git clone [https://github.com/1751200/Xlab-k8s-gpu.git](https://github.com/1751200/Xlab-k8s-gpu.git)
+
+### Experiments
+
+\* Only experiments of non-iterative methods are listed here.
+
+- Implementation of Gaussian Elimination, LU decomposition, SVD decomposition algorithms using `Eigen` (used for comparison and analysis)
+    - Report: [Performance analysis of several conventional solutions using C + + Eigen Library](https://github.com/1751200/Xlab-k8s-gpu/blob/master/Report/report3/使用%20C%2B%2B%20Eigen%20库对几种常规解法进行性能分析.md)
+    - Code: [./Non-iterative-Methods/Eigen/](https://github.com/1751200/Xlab-k8s-gpu/tree/master/Non-iterative-Methods/Eigen)
+- Implementation of non-iterative method based on Gaussian Elimination using C++ and CUDA (both CPU and GPU versions)
+    - [Report](https://github.com/1751200/Xlab-k8s-gpu/blob/master/Report/report6/几种算法的性能对比.md)
+    - Code: [./Non-iterative-Methods/Gaussian-elimination/](https://github.com/1751200/Xlab-k8s-gpu/tree/master/Non-iterative-Methods/Gaussian-elimination)
+- Implementation of non-iterative method based on LU Decomposition using C++ and CUDA (both CPU and GPU versions)
+    - [Report](https://github.com/1751200/Xlab-k8s-gpu/blob/master/Report/report6/几种算法的性能对比.md)
+    - Code: [./Non-iterative-Methods/LU-Decomposition/](https://github.com/1751200/Xlab-k8s-gpu/tree/master/Non-iterative-Methods/LU-Decomposition)
+- Implementation of non-iterative method based on SVD Decomposition using C++ and CUDA (both CPU and GPU versions)
+    - [Report](https://github.com/1751200/Xlab-k8s-gpu/blob/master/Report/report6/几种算法的性能对比.md)
+    - Code: [./Non-iterative-Methods/svd-solver/](https://github.com/1751200/Xlab-k8s-gpu/tree/master/Non-iterative-Methods/svd-solver)
 
 ### Import the Project to IDE
 
@@ -66,21 +83,21 @@ We use **GitHub Wiki** for organizing documentation. For the documentation avail
 ```
 .
 ├── MatMul                         # Solve large matrix multiplication problem
-│   ├── CUDA                       # Example provided by CUDA tutorial
-│   ├── PyTorch&CuPy               # Cope with matrix multiplication using python libararies
-│   └── cuBLAS                     # Solve large matrix multiplication using cuBLAS API
+│   ├── CUDA                       # Example provided by CUDA tutorial
+│   ├── PyTorch&CuPy               # Cope with matrix multiplication using python libararies
+│   └── cuBLAS                     # Solve large matrix multiplication using cuBLAS API
 ├── Iterative-Methods              # Implementation of iterative methods
-│   ├── Basic                      # initialize solvers
-│   ├── ConjugateGradient          # Conjugate Gradient method (both CPU and GPU)
-│   ├── Jacobi                     # Jacobi method (both CPU and GPU)
-│   ├── Gauss-Seidel               # Gauss Seidel method (both CPU and GPU)
-│   ├── Sparse-Matrix-CG-Solver    # Solve sparse linear system using cuBLAS and cuSOLVER
-│   └── Utils                      # Utils, helps to read matrix data from given file
+│   ├── Basic                      # initialize solvers
+│   ├── ConjugateGradient          # Conjugate Gradient method (both CPU and GPU)
+│   ├── Jacobi                     # Jacobi method (both CPU and GPU)
+│   ├── Gauss-Seidel               # Gauss Seidel method (both CPU and GPU)
+│   ├── Sparse-Matrix-CG-Solver    # Solve sparse linear system using cuBLAS and cuSOLVER
+│   └── Utils                      # Utils, helps to read matrix data from given file
 ├── Non-iterative-Methods          # Implementation of iterative methods
-│   ├── Eigen                      # Gaussian Elimination, LU, SVD methods using Eigen
-│   ├── Gaussian-elimination       # Gaussian Elimination method
-│   ├── LU-Decomposition           # LU Decomposition method
-│   └── svd-solver                 # SVD Decomposition method
+│   ├── Eigen                      # Gaussian Elimination, LU, SVD methods using Eigen
+│   ├── Gaussian-elimination       # Gaussian Elimination method
+│   ├── LU-Decomposition           # LU Decomposition method
+│   └── svd-solver                 # SVD Decomposition method
 ├── project                        # A Node.js app for testing these algorithms
 ├── Report                         # Documentation for this project
 ├── README.md
