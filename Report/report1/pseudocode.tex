@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{times}
+
+\begin{document}
+
+\begin{algorithm}
+    \caption{Hybrid Columen-Based Right-Looking Algorithm} 
+    \label{alg1}
+    \begin{algorithmic}[1]
+        \For{$k=1$ to \(n\)}
+            \State \emph{/* Compute column $k$ of $L$ matrix */}
+            \For{$i=k+1$ to $n$ where $A_{s}(i, k) \neq 0$}
+                \State $A_{s}(i, k)=A_{s}(i, k) / A_{s}(k, k)$
+            \EndFor
+            \State \emph{/* Update the submatrix for next iteration */}
+            \For{$j=k+1$ to $n$ where $A_{s}(k, j) \neq 0$}
+                \For{$i=k+1$ to $n$ where $A_{s}(i, k) \neq 0$}
+                    \State $A_{s}(i, j)=A_{s}(i, j)-A_{s}(i, k) * A_{s}(k, j)$
+                \EndFor
+            \EndFor
+        \EndFor
+    \end{algorithmic}
+\end{algorithm}
+
+\end{document}
